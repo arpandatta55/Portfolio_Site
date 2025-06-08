@@ -1,0 +1,140 @@
+:root {
+    --body_font: "Inter Tight", sans-serif;
+    --hdng_font: "Bree Serif", serif;
+    --tertiary_font: "Ubuntu", sans-serif;
+    --body_color: #0f1624;
+    --white_color: #fff;
+    --theme_color: #d6203b;
+    --transition: 0.4s all ease-in-out;
+    --section_gap: 100px 0;
+}
+
+.dark {
+    background: #f7f7f7;
+}
+
+.dark h1,
+.dark h2,
+.dark h3,
+.dark h4,
+.dark h5,
+.dark h6,
+.dark p,
+.dark li {
+    color: var(--body_color);
+}
+
+.dark .worked_count,
+.dark .education_setion,
+.dark .keyprojects_section {
+    background: #f0f0f0;
+}
+
+
+.dark .education_items i {
+    color: var(--body_color);
+}
+
+.dark .sitebtn:hover {
+    border-color: var(--theme_color);
+    color: var(--theme_color);
+}
+
+.dark .hamhead {
+    background: var(--theme_color);
+}
+
+.dark .education_items::after {
+    background: #525161;
+}
+
+.dark .education_items:hover p,
+.dark .education_items:hover h3,
+.dark .education_items:hover i {
+    color: #fff;
+}
+
+.dark .education_items:hover {
+    border-color: #525161;
+}
+
+.dark .bi-lightbulb {
+    color: rgb(0, 0, 0, 0.4);
+}
+
+.dark .list-group-item.active~a::after {
+    border-color: #0f1624;
+}
+
+.dark .projects_wrap>ul>li h3::after {
+    color: #fff;
+}
+
+.dark .projects_wrap>ul>li::before,
+.dark .projects_wrap>ul>li:nth-child(even):after,
+.dark .projects_wrap>ul>li::after {
+    border: 1px dashed var(--body_color);
+}
+
+.dark .contact_input {
+    border-color: var(--body_color);
+    color: var(--body_color);
+}
+
+.dark .header {
+    background: #f8fafd;
+}
+
+.dark .header_logo a {
+    border-color: var(--theme_color);
+}
+
+.dark .navitem {
+    background: #f0f0f0;
+}
+
+.dark .navlink {
+    color: var(--body_color);
+    font-weight: 400;
+}
+
+.dark .navitem:hover .navlink,
+.dark .active_one {
+    color: #fff;
+}
+
+.dark .header_social a {
+    color: var(--body_color);
+}
+
+.dark .item_wrap ul li::after {
+    background: var(--body_color);
+}
+.dark .baddge{
+    color: #fff;
+}
+
+
+/* Responsive */
+
+@media (max-width:1199px) {
+
+
+
+    .dark .projects_holder .projects_wrap {
+        background: #fff;
+
+    }
+
+    .dark .projects_holder .projects_wrap h3::after {
+        color: #fff;
+    }
+}
+
+@media (max-width:991px) {
+
+
+    .dark .header_listing_holder {
+        background: #fff;
+    }
+}
