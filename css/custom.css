@@ -847,7 +847,7 @@ main {
   height: 100%;
   animation: rotateCircle 40s linear infinite;
   transform-origin: center center;
-  opacity: 0;
+  opacity: 1;
   transition: var(--transition);
 }
 

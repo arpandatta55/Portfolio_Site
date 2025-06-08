@@ -202,29 +202,29 @@ $(function () {
 
 // Bulb Light On Js
 
-function applyLightonByScreen() {
-  if (window.innerWidth < 768) {
-    // Always add class below 768px
-    $('.skills_section').addClass('lighton');
-  }
-}
+// function applyLightonByScreen() {
+//   if (window.innerWidth < 768) {
+//     // Always add class below 768px
+//     $('.skills_section').addClass('lighton');
+//   }
+// }
 
-$(document).ready(function () {
-  // Run on page load
-  applyLightonByScreen();
+// $(document).ready(function () {
+//   // Run on page load
+//   applyLightonByScreen();
 
-  // Run on window resize
-  $(window).on('resize', function () {
-    applyLightonByScreen();
-  });
+//   // Run on window resize
+//   $(window).on('resize', function () {
+//     applyLightonByScreen();
+//   });
 
-  // Checkbox toggle only for >=768px
-  $('.rocker input[type="checkbox"]').change(function () {
-    if (window.innerWidth >= 768) {
-      $('.skills_section').toggleClass('lighton');
-    }
-  });
-});
+//   // Checkbox toggle only for >=768px
+//   $('.rocker input[type="checkbox"]').change(function () {
+//     if (window.innerWidth >= 768) {
+//       $('.skills_section').toggleClass('lighton');
+//     }
+//   });
+// });
 
 
 
@@ -364,17 +364,17 @@ if (window.innerWidth > 1199) {
 
 // Disabled inspect mode 
 
-// document.addEventListener('contextmenu', event => event.preventDefault());
-// document.onkeydown = function(e) {
-//   if (
-//     e.keyCode === 123 || // F12
-//     (e.ctrlKey && e.shiftKey && e.keyCode === 73) || // Ctrl+Shift+I
-//     (e.ctrlKey && e.shiftKey && e.keyCode === 74) || // Ctrl+Shift+J
-//     (e.ctrlKey && e.keyCode === 85) // Ctrl+U (View source)
-//   ) {
-//     return false;
-//   }
-// };
+document.addEventListener('contextmenu', event => event.preventDefault());
+document.onkeydown = function(e) {
+  if (
+    e.keyCode === 123 || // F12
+    (e.ctrlKey && e.shiftKey && e.keyCode === 73) || // Ctrl+Shift+I
+    (e.ctrlKey && e.shiftKey && e.keyCode === 74) || // Ctrl+Shift+J
+    (e.ctrlKey && e.keyCode === 85) // Ctrl+U (View source)
+  ) {
+    return false;
+  }
+};
 
 // Disabled inspect mode 
 
