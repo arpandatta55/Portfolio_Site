@@ -43,23 +43,6 @@ $('.review_slider_one').slick({
 });
 
 
-//AOS
-AOS.init(
-  {
-    offset: 300,
-    duration: 900,
-    easing: 'ease-in-out',
-    // disable: 'mobile',
-    // once: true,
-  }
-);
-//AOS
-
-// Tooltip
-const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
-
-
 // Hamburger Toggle
 $(document).ready(function () {
   $(".menu-link-wrapper").click(function () {
@@ -120,9 +103,6 @@ $('.work_count').waypoint(function () {
 }, {
   offset: '80%' // scroll e viewport e 80% ashle fire hobe
 });
-
-
-
 
 
 // Section Scrolling
@@ -332,7 +312,6 @@ $(document).ready(function () {
 });
 
 
-
 // Ensure GSAP & ScrollTrigger are registered
 gsap.registerPlugin(ScrollTrigger);
 
@@ -358,9 +337,6 @@ if (window.innerWidth > 1199) {
     }
   });
 }
-
-
-
 
 // Disabled inspect mode 
 
@@ -411,7 +387,6 @@ $(window).on('load resize orientationchange', function () {
 
 
 // Add class in header in 991px scroll_up
-
 
 let lastScrollTop = 0;
 const header = document.querySelector('header');
