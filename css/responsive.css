@@ -92,7 +92,7 @@ body {
     }
 
     .keyprojects_section {
-        padding: 60px 0px;
+        padding: 60px 0px 110px;
     }
 
     .Welcome_Section {
@@ -295,113 +295,6 @@ body {
         top: 770px;
     }
 
-    .projects_wrap>ul>li:nth-child(even) .projects_wrap {
-        justify-content: start;
-    }
-
-    .slick-arrow {
-        background: var(--theme_color);
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        bottom: -80px;
-        top: unset;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    .slick-next {
-        margin-left: 35px;
-    }
-
-    .slick-next:before {
-        content: '\f105 ';
-        font-family: 'fontawesome';
-        opacity: 1;
-        transition: var(--transition);
-    }
-
-    .slick-prev {
-        margin-left: -35px;
-    }
-
-    .slick-prev:before {
-        content: '\f104';
-        font-family: 'fontawesome';
-        opacity: 1;
-        transition: var(--transition);
-    }
-
-    .keyprojects_section {
-        padding: 20px 0px 110px;
-    }
-
-    .slick-prev:hover,
-    .slick-next:hover {
-        color: transparent;
-        outline: none;
-        background: #ffd02e;
-    }
-
-    .slick-prev:hover::before,
-    .slick-next:hover::before,
-    .slick-prev:focus::before,
-    .slick-next:focus::before {
-        color: var(--body_color);
-    }
-
-    .projects_wrap>ul {
-        display: block;
-    }
-
-    .projects_wrap {
-        height: auto;
-        display: block;
-    }
-
-    .slick-slide {
-        padding: 0 10px;
-        height: auto;
-    }
-
-    .slick-list,
-    .slick-track {
-        transition: none;
-    }
-
-    .projects_holder .projects_wrap {
-        background: #0f1624;
-        padding: 30px 20px 30px 55px;
-        border-top-left-radius: 35px;
-        border-bottom-right-radius: 35px;
-        height: 100%;
-        transition: var(--transition);
-    }
-
-    .projects_holder .slick-track {
-        display: flex;
-    }
-
-    .projects_holder .projects_wrap h3::after {
-        content: counter(li);
-        position: absolute;
-        background: var(--theme_color);
-        border-radius: 50%;
-        width: 40px;
-        height: 40px;
-        left: -47px;
-        top: -10px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-weight: 500;
-        transition: var(--transition);
-    }
-
-    .projects_wrap .slick-slide {
-        counter-increment: li;
-    }
-
     .contact_text h2 {
         font-size: 45px;
     }
@@ -420,7 +313,7 @@ body {
     .navlist {
         flex-direction: column;
         align-items: start;
-        padding: 40px 0;
+        padding: 40px 0 0;
     }
 
     .navlist_hldr {
@@ -1125,6 +1018,10 @@ body {
 
     .skills_listing>ul li:nth-child(3) {
         right: -16px;
+    }
+
+    .navlist_hldr {
+        padding-bottom: 20px;
     }
 
 }

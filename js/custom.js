@@ -1,46 +1,32 @@
 
-// review slider //////
-$('.review_slider_one').slick({
-  centerMode: true,
-  centerPadding: '60px',
+// Projects Slider
+$('.projects_holder>ul').slick({
+  centerMode: false,
+  centerPadding: '0px',
   slidesToShow: 3,
   slidesToScroll: 1,
-  centerMode: true,
-  infinite: true,
-  dots: true,
-  // autoplay: true,
-  autoplaySpeed: 2000,
-  // cssEase: 'linear',
-  // variableWidth: true,
-  arrows: false,
+  infinite: false,
+  dots: false,
+  autoplay: true,
+  autoplaySpeed: 3000,
+  arrows: true,
   // rtl: true,
   responsive: [
     {
-      breakpoint: 992,
+      breakpoint: 1200,
       settings: {
         slidesToShow: 2,
-        slidesToScroll: 1,
-        variableWidth: false,
       }
     },
     {
       breakpoint: 768,
       settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        variableWidth: false,
-      }
-    },
-    {
-      breakpoint: 576,
-      settings: {
         slidesToShow: 1,
-        slidesToScroll: 1,
-        variableWidth: false,
       }
     }
   ]
 });
+
 
 
 // Hamburger Toggle
@@ -312,32 +298,6 @@ $(document).ready(function () {
 });
 
 
-// Ensure GSAP & ScrollTrigger are registered
-gsap.registerPlugin(ScrollTrigger);
-
-if (window.innerWidth > 1199) {
-  const wrapper = document.querySelector('.projects_wrap > ul');
-  const container = document.querySelector('.projects_wrap');
-
-  const totalWidth = wrapper.scrollWidth;
-  const containerWidth = container.offsetWidth;
-  const scrollDistance = totalWidth - containerWidth;
-
-  gsap.to(wrapper, {
-    x: () => `-${scrollDistance}px`,
-    ease: 'none',
-    scrollTrigger: {
-      trigger: container,
-      scroller: 'body',
-      scrub: 2,
-      pin: true,
-      start: 'top top',
-      end: () => `+=${totalWidth}`, // dynamically set end
-      markers: false,
-    }
-  });
-}
-
 // Disabled inspect mode 
 
 document.addEventListener('contextmenu', event => event.preventDefault());
@@ -349,41 +309,10 @@ document.onkeydown = function (e) {
     (e.ctrlKey && e.keyCode === 85) // Ctrl+U (View source)
   ) {
     return false;
-  }
+  } 
 };
 
 // Disabled inspect mode 
-
-// Projects Slider
-
-$(window).on('load resize orientationchange', function () {
-  $('.projects_holder>ul').each(function () {
-    var $carousel = $(this);
-    if ($(window).width() > 1199) {
-      if ($carousel.hasClass('slick-initialized')) {
-        $carousel.slick('unslick');
-      }
-    } else {
-      if (!$carousel.hasClass('slick-initialized')) {
-        $('.projects_holder>ul').slick({
-          // dots: true,
-          infinite: false,
-          arrows: true,
-          slidesToShow: 2,
-          autoplaySpeed: 3000,
-          autoplay: true,
-          slidesToScroll: 1,
-          responsive: [{
-            breakpoint: 768,
-            settings: {
-              slidesToShow: 1,
-            }
-          }]
-        });
-      }
-    }
-  });
-});
 
 
 // Add class in header in 991px scroll_up
@@ -413,3 +342,25 @@ window.addEventListener('scroll', () => {
 });
 
 
+// Email JS
+
+(function () {
+  emailjs.init("uUdemqlEi4BwdfSCW"); // Replace with your EmailJS public key
+})();
+
+
+document.getElementById("contact-form").addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  emailjs.sendForm("service_h0m3h0r", "template_c2kuqia", this).then(
+    function () {
+      alert("Message sent successfully!");
+    },
+    function (error) {
+      alert("Failed to send message. Please try again.\n" + JSON.stringify(error));
+    }
+  );
+
+  // Optional: Reset form
+  this.reset();
+});

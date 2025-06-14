@@ -110,26 +110,24 @@
 .dark .item_wrap ul li::after {
     background: var(--body_color);
 }
-.dark .baddge{
+
+.dark .baddge {
+    color: #fff;
+}
+
+.dark .projects_holder .projects_wrap {
+    background: #fff;
+
+}
+
+.dark .projects_holder .projects_wrap h3::after {
     color: #fff;
 }
 
 
 /* Responsive */
 
-@media (max-width:1199px) {
-
-
-
-    .dark .projects_holder .projects_wrap {
-        background: #fff;
-
-    }
-
-    .dark .projects_holder .projects_wrap h3::after {
-        color: #fff;
-    }
-}
+@media (max-width:1199px) {}
 
 @media (max-width:991px) {
 

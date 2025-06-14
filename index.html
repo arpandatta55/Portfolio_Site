@@ -134,7 +134,7 @@
                                     <div class="welcome_button">
                                         <a class="sitebtn" href="#contact" title="Hire Me">hire me</a>
                                         <a class="sitebtn" target="_blank"
-                                            href="./file/Arpan Datta C.V. (Soft-Copy).pdf" download="Arpan_Datta_CV"
+                                            href="./file/Arpan_Datta_CV_(Soft-Copy)_2025.pdf" download="Arpan_Datta_CV"
                                             title="Download Now">Download CV</a>
                                     </div>
                                 </div>
@@ -511,33 +511,6 @@
     <script src="./js/splite_type.js"></script>
     <script src="./js/custom.js"></script>
 
-
-    <script>
-
-        // Email JS
-
-
-        (function () {
-            emailjs.init("uUdemqlEi4BwdfSCW"); // Replace with your EmailJS public key
-        })();
-
-
-        document.getElementById("contact-form").addEventListener("submit", function (e) {
-            e.preventDefault();
-
-            emailjs.sendForm("service_h0m3h0r", "template_c2kuqia", this).then(
-                function () {
-                    alert("Message sent successfully!");
-                },
-                function (error) {
-                    alert("Failed to send message. Please try again.\n" + JSON.stringify(error));
-                }
-            );
-
-            // Optional: Reset form
-            this.reset();
-        });
-    </script>
 
 </body>
 
