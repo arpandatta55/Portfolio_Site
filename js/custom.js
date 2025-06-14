@@ -341,7 +341,7 @@ if (window.innerWidth > 1199) {
 // Disabled inspect mode 
 
 document.addEventListener('contextmenu', event => event.preventDefault());
-document.onkeydown = function(e) {
+document.onkeydown = function (e) {
   if (
     e.keyCode === 123 || // F12
     (e.ctrlKey && e.shiftKey && e.keyCode === 73) || // Ctrl+Shift+I
@@ -410,4 +410,29 @@ window.addEventListener('scroll', () => {
 
     lastScrollTop = currentScroll;
   }
+});
+
+
+// Email JS
+
+
+(function () {
+  emailjs.init("uUdemqlEi4BwdfSCW"); // Replace with your EmailJS public key
+})();
+
+
+document.getElementById("contact-form").addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  emailjs.sendForm("service_j6k5jnl", "template_c2kuqia", this).then(
+    function () {
+      alert("Message sent successfully!");
+    },
+    function (error) {
+      alert("Failed to send message. Please try again.\n" + JSON.stringify(error));
+    }
+  );
+
+  // Optional: Reset form
+  this.reset();
 });
