@@ -7,8 +7,8 @@ $('.projects_holder>ul').slick({
   slidesToScroll: 1,
   infinite: false,
   dots: false,
-  autoplay: true,
-  autoplaySpeed: 3000,
+  autoplay: false,
+  // autoplaySpeed: 3000,
   arrows: true,
   // rtl: true,
   responsive: [
