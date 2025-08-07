@@ -115,6 +115,10 @@ body {
         bottom: -270px;
     }
 
+    .demoprj_img {
+        height: 250px;
+    }
+
 }
 
 @media(max-width:1399px) {
@@ -234,6 +238,18 @@ body {
         margin-top: 20px;
     }
 
+    .skills_listing>ul li:nth-child(5) {
+        left: 60%;
+    }
+
+    .skills_listing>ul li:nth-child(9) {
+        left: 29%;
+    }
+
+    .demoprj_img {
+        height: 200px;
+    }
+
 }
 
 @media(max-width:1199px) {
@@ -292,6 +308,10 @@ body {
     }
 
     .skills_listing>ul li:nth-child(5) {
+        top: 770px;
+    }
+
+    .skills_listing>ul li:nth-child(9) {
         top: 770px;
     }
 
@@ -656,8 +676,8 @@ body {
     }
 
     .skills_listing>ul li:nth-child(5) {
-        top: 720px;
-        left: 44%;
+        top: 700px;
+        left: 63%;
     }
 
     .skills_listing>ul li:nth-child(8) {
@@ -672,20 +692,26 @@ body {
 
     .skills_listing>ul li:nth-child(7) {
         left: -20px;
-        top: 410px;
+        top: 380px;
     }
 
     .skills_listing>ul li:nth-child(3) {
         right: 0px;
-        top: 410px;
+        top: 380px;
     }
 
     .skills_listing>ul li:nth-child(6) {
-        left: 40px;
+        left: 10px;
+        top: 550px;
     }
 
     .skills_listing>ul li:nth-child(4) {
-        right: 50px;
+        right: 20px;
+        top: 550px;
+    }
+
+    .skills_listing>ul li:nth-child(9) {
+        top: 700px;
     }
 
     .skills_wrap {
@@ -731,6 +757,14 @@ body {
 
     .footer_btm {
         margin-top: 50px;
+    }
+
+    .react_demo {
+        padding: 15px;
+    }
+
+    .demoprj_img {
+        height: 160px;
     }
 }
 
@@ -833,6 +867,22 @@ body {
         bottom: 30px;
     }
 
+    .skills_listing>ul li:nth-child(4) {
+        right: 36px;
+    }
+
+    .textmsg {
+        padding-top: 14px;
+    }
+
+    .demoprj_img {
+        height: 300px;
+    }
+
+    .react_projects .slick-slide {
+        padding: 0 30px;
+    }
+
 }
 
 
@@ -901,7 +951,7 @@ body {
     .baddge {
         padding: 1px 10px;
         font-size: 11px;
-        right: -42px;
+        right: -35px;
         line-height: 1.8;
         top: -12px;
     }
@@ -916,27 +966,26 @@ body {
 
     .skills_listing>ul li:nth-child(7) {
         left: -27px;
-        top: 330px;
+        top: 320px;
     }
 
     .skills_listing>ul li:nth-child(6) {
         left: -10px;
-        top: 450px;
+        top: 430px;
     }
 
     .skills_listing>ul li:nth-child(5) {
         top: 540px;
-        left: 40%;
+        left: 60%;
     }
 
     .skills_listing>ul li:nth-child(4) {
         right: 30px;
-        top: 450px;
+        top: 430px;
     }
 
     .skills_listing>ul li:nth-child(3) {
-        right: -6px;
-        top: 330px;
+        top: 320px;
     }
 
     .skills_listing>ul li:nth-child(2) {
@@ -945,6 +994,10 @@ body {
 
     .skills_listing>ul li:first-child {
         top: 190px;
+    }
+
+    .skills_listing>ul li:nth-child(9) {
+        top: 540px;
     }
 
     .skills_wrap {
@@ -995,6 +1048,18 @@ body {
 
     .projects_wrap>ul {
         margin-top: 30px;
+    }
+
+    .demoprj_img {
+        height: 190px;
+    }
+
+    .react_demo p {
+        margin-bottom: 5px;
+    }
+
+    .react_projects {
+        margin-top: 120px;
     }
 
 }

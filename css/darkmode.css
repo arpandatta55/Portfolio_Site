@@ -124,6 +124,9 @@
     color: #fff;
 }
 
+.dark .react_demo {
+    background: #ffffff;
+}
 
 /* Responsive */
 

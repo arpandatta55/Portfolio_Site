@@ -328,6 +328,7 @@ section {
   bottom: 0;
   min-height: 100vh;
   overflow-y: auto;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .navlist_hldr {
@@ -820,7 +821,7 @@ main {
 }
 
 .skills_listing>ul li:nth-child(5) {
-  left: 46%;
+  left: 56%;
   top: 800px;
 }
 
@@ -837,6 +838,11 @@ main {
 .skills_listing>ul li:nth-child(8) {
   left: 310px;
   top: 170px;
+}
+
+.skills_listing>ul li:nth-child(9) {
+  left: 35%;
+  top: 800px;
 }
 
 .skills_holder h3 {
@@ -1505,3 +1511,56 @@ main {
 .projects_wrap .slick-slide {
   counter-increment: li;
 }
+
+/* React Project Updation */
+
+.react_projects {
+  margin-top: 140px;
+}
+
+.react_projects h2 {
+  margin-bottom: 10px;
+}
+
+.react_projects .row {
+  margin-top: 35px;
+}
+
+.demoprj_img {
+  height: 300px;
+  width: 100%;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.react_demo h3 {
+  margin-bottom: 10px;
+}
+
+.react_demo p {
+  margin-bottom: 8px;
+}
+
+.react_demo .sitebtn {
+  margin-top: 15px;
+}
+
+.react_demo {
+  background: #0f1624;
+  padding: 20px;
+  border-top-left-radius: 35px;
+  border-bottom-right-radius: 35px;
+  height: 100%;
+  transition: var(--transition);
+}
+.react_demo:hover .demoprj_img img{
+  transform: scale(1.1);
+}
+
+.demoprj_img .w100 {
+  border-top-left-radius: 35px;
+  border-bottom-right-radius: 35px;
+}
+
+
+/* React Project Updation */

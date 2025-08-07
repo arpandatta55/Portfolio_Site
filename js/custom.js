@@ -28,6 +28,31 @@ $('.projects_holder>ul').slick({
 });
 
 
+// React Slider
+if (window.innerWidth <= 575) {
+  $('.react_row').slick({
+    centerMode: false,
+    centerPadding: '0px',
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    infinite: false,
+    dots: false,
+    autoplay: false,
+    // autoplaySpeed: 3000,
+    arrows: true,
+    // rtl: true,
+    responsive: [
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+    ]
+  });
+
+}
+
 
 // Hamburger Toggle
 $(document).ready(function () {
@@ -300,17 +325,17 @@ $(document).ready(function () {
 
 // Disabled inspect mode 
 
-document.addEventListener('contextmenu', event => event.preventDefault());
-document.onkeydown = function (e) {
-  if (
-    e.keyCode === 123 || // F12
-    (e.ctrlKey && e.shiftKey && e.keyCode === 73) || // Ctrl+Shift+I
-    (e.ctrlKey && e.shiftKey && e.keyCode === 74) || // Ctrl+Shift+J
-    (e.ctrlKey && e.keyCode === 85) // Ctrl+U (View source)
-  ) {
-    return false;
-  } 
-};
+// document.addEventListener('contextmenu', event => event.preventDefault());
+// document.onkeydown = function (e) {
+//   if (
+//     e.keyCode === 123 || // F12
+//     (e.ctrlKey && e.shiftKey && e.keyCode === 73) || // Ctrl+Shift+I
+//     (e.ctrlKey && e.shiftKey && e.keyCode === 74) || // Ctrl+Shift+J
+//     (e.ctrlKey && e.keyCode === 85) // Ctrl+U (View source)
+//   ) {
+//     return false;
+//   } 
+// };
 
 // Disabled inspect mode 
 
